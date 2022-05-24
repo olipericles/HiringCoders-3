@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=he, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65019cbe23.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pericles Oliveira</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./img/avflex.jpg" alt style="width: 100px;">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.github.com/olipericles">GitHub!</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://telegram.me/olipericles">Telegram!</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/olipericles">LinkedIn!</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Péricles Oliveira</h1>
+                <h5>Estudante Full-Stack</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display:none" id="about">
+                <p>
+                    Motivado pelas mudanças que quero ver no mundo e por uma engenharia popular e solidária, busco sempre construir um desenvolvimento mútuo com o ambiente que estou imerso e com as pessoas que me rodeiam.<br>
+                    Intraempreendedor e sempre interessado pela entrega dos resultados com praticidade e qualidade, gosto de resolver problemas tanto criando automações para os processos que executo como na busca contínua pela renovação do engajamento e motivação da equipe que faço parte.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe o seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
